@@ -7,12 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A37774721A60ED510083A938 /* 32-iphone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A37774711A60ED510083A938 /* 32-iphone@2x.png */; };
+		A37774751A60EDFA0083A938 /* 68-paperclip@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A37774741A60EDFA0083A938 /* 68-paperclip@2x.png */; };
+		A37774781A60EF350083A938 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37774761A60EF350083A938 /* Extensions.swift */; };
+		A37774791A60EF350083A938 /* ViewControllerUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37774771A60EF350083A938 /* ViewControllerUtils.swift */; };
+		A377747B1A625E570083A938 /* RegisterStudentVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = A377747A1A625E570083A938 /* RegisterStudentVc.swift */; };
+		A377747D1A625E950083A938 /* StudentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A377747C1A625E950083A938 /* StudentModel.swift */; };
 		A384BDB51A5FE20E001EA635 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A384BDB41A5FE20E001EA635 /* AppDelegate.swift */; };
-		A384BDB71A5FE20E001EA635 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A384BDB61A5FE20E001EA635 /* ViewController.swift */; };
 		A384BDBA1A5FE20E001EA635 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A384BDB81A5FE20E001EA635 /* Main.storyboard */; };
 		A384BDBC1A5FE20E001EA635 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A384BDBB1A5FE20E001EA635 /* Images.xcassets */; };
 		A384BDBF1A5FE20E001EA635 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A384BDBD1A5FE20E001EA635 /* LaunchScreen.xib */; };
 		A384BDCB1A5FE20E001EA635 /* littlestarsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A384BDCA1A5FE20E001EA635 /* littlestarsTests.swift */; };
+		A384BDEA1A5FE3D8001EA635 /* Alamofire.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = A384BDE41A5FE385001EA635 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A384BDED1A5FE449001EA635 /* APIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A384BDEC1A5FE449001EA635 /* APIController.swift */; };
+		A384BDF01A5FE495001EA635 /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A384BDEF1A5FE495001EA635 /* ProfileModel.swift */; };
+		A384BDF31A5FE5A1001EA635 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A384BDF21A5FE5A1001EA635 /* Utils.swift */; };
+		A384BDF51A5FE5F5001EA635 /* config.plist in Resources */ = {isa = PBXBuildFile; fileRef = A384BDF41A5FE5F5001EA635 /* config.plist */; };
+		A384BDFA1A5FEAC9001EA635 /* LandingTvc.swift in Sources */ = {isa = PBXBuildFile; fileRef = A384BDF91A5FEAC9001EA635 /* LandingTvc.swift */; };
+		A384BE001A5FF033001EA635 /* RegisterProfileVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = A384BDFF1A5FF033001EA635 /* RegisterProfileVc.swift */; };
+		A384BE041A5FF09C001EA635 /* 111-user.png in Resources */ = {isa = PBXBuildFile; fileRef = A384BE011A5FF09C001EA635 /* 111-user.png */; };
+		A384BE051A5FF09C001EA635 /* 18-envelope.png in Resources */ = {isa = PBXBuildFile; fileRef = A384BE021A5FF09C001EA635 /* 18-envelope.png */; };
+		A384BE061A5FF09C001EA635 /* 54-lock.png in Resources */ = {isa = PBXBuildFile; fileRef = A384BE031A5FF09C001EA635 /* 54-lock.png */; };
+		A39ADEDF1A69139F00F941A5 /* image_placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = A39ADEDE1A69139F00F941A5 /* image_placeholder.png */; };
+		A39ADEE21A6913E600F941A5 /* UploadImageVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39ADEE11A6913E600F941A5 /* UploadImageVc.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,19 +40,71 @@
 			remoteGlobalIDString = A384BDAE1A5FE20E001EA635;
 			remoteInfo = littlestars;
 		};
+		A384BDE31A5FE385001EA635 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A384BDDE1A5FE385001EA635 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = Alamofire;
+		};
+		A384BDE51A5FE385001EA635 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A384BDDE1A5FE385001EA635 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = AlamofireTests;
+		};
+		A384BDE71A5FE397001EA635 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A384BDDE1A5FE385001EA635 /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
+			remoteInfo = Alamofire;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		A384BDE91A5FE3A7001EA635 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A384BDEA1A5FE3D8001EA635 /* Alamofire.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		A37774711A60ED510083A938 /* 32-iphone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "32-iphone@2x.png"; sourceTree = "<group>"; };
+		A37774741A60EDFA0083A938 /* 68-paperclip@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "68-paperclip@2x.png"; sourceTree = "<group>"; };
+		A37774761A60EF350083A938 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		A37774771A60EF350083A938 /* ViewControllerUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerUtils.swift; sourceTree = "<group>"; };
+		A377747A1A625E570083A938 /* RegisterStudentVc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterStudentVc.swift; sourceTree = "<group>"; };
+		A377747C1A625E950083A938 /* StudentModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentModel.swift; sourceTree = "<group>"; };
 		A384BDAF1A5FE20E001EA635 /* littlestars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = littlestars.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A384BDB31A5FE20E001EA635 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A384BDB41A5FE20E001EA635 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A384BDB61A5FE20E001EA635 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A384BDB91A5FE20E001EA635 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A384BDBB1A5FE20E001EA635 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A384BDBE1A5FE20E001EA635 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		A384BDC41A5FE20E001EA635 /* littlestarsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = littlestarsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A384BDC91A5FE20E001EA635 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A384BDCA1A5FE20E001EA635 /* littlestarsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = littlestarsTests.swift; sourceTree = "<group>"; };
+		A384BDDE1A5FE385001EA635 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = "../../../../../../Downloads/Alamofire-master/Alamofire.xcodeproj"; sourceTree = "<group>"; };
+		A384BDEC1A5FE449001EA635 /* APIController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIController.swift; sourceTree = "<group>"; };
+		A384BDEF1A5FE495001EA635 /* ProfileModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
+		A384BDF21A5FE5A1001EA635 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		A384BDF41A5FE5F5001EA635 /* config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = config.plist; sourceTree = "<group>"; };
+		A384BDF91A5FEAC9001EA635 /* LandingTvc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingTvc.swift; sourceTree = "<group>"; };
+		A384BDFF1A5FF033001EA635 /* RegisterProfileVc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterProfileVc.swift; sourceTree = "<group>"; };
+		A384BE011A5FF09C001EA635 /* 111-user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "111-user.png"; sourceTree = "<group>"; };
+		A384BE021A5FF09C001EA635 /* 18-envelope.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "18-envelope.png"; sourceTree = "<group>"; };
+		A384BE031A5FF09C001EA635 /* 54-lock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "54-lock.png"; sourceTree = "<group>"; };
+		A39ADEDE1A69139F00F941A5 /* image_placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image_placeholder.png; sourceTree = "<group>"; };
+		A39ADEE11A6913E600F941A5 /* UploadImageVc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadImageVc.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +128,7 @@
 		A384BDA61A5FE20E001EA635 = {
 			isa = PBXGroup;
 			children = (
+				A384BDDE1A5FE385001EA635 /* Alamofire.xcodeproj */,
 				A384BDB11A5FE20E001EA635 /* littlestars */,
 				A384BDC71A5FE20E001EA635 /* littlestarsTests */,
 				A384BDB01A5FE20E001EA635 /* Products */,
@@ -77,9 +147,12 @@
 		A384BDB11A5FE20E001EA635 /* littlestars */ = {
 			isa = PBXGroup;
 			children = (
-				A384BDB41A5FE20E001EA635 /* AppDelegate.swift */,
-				A384BDB61A5FE20E001EA635 /* ViewController.swift */,
 				A384BDB81A5FE20E001EA635 /* Main.storyboard */,
+				A384BDF61A5FE814001EA635 /* controllers */,
+				A384BDF11A5FE58D001EA635 /* utils */,
+				A384BDD41A5FE298001EA635 /* api */,
+				A384BDEE1A5FE47D001EA635 /* models */,
+				A384BDB41A5FE20E001EA635 /* AppDelegate.swift */,
 				A384BDBB1A5FE20E001EA635 /* Images.xcassets */,
 				A384BDBD1A5FE20E001EA635 /* LaunchScreen.xib */,
 				A384BDB21A5FE20E001EA635 /* Supporting Files */,
@@ -90,7 +163,14 @@
 		A384BDB21A5FE20E001EA635 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A39ADEDE1A69139F00F941A5 /* image_placeholder.png */,
+				A37774711A60ED510083A938 /* 32-iphone@2x.png */,
+				A37774741A60EDFA0083A938 /* 68-paperclip@2x.png */,
+				A384BE011A5FF09C001EA635 /* 111-user.png */,
+				A384BE021A5FF09C001EA635 /* 18-envelope.png */,
+				A384BE031A5FF09C001EA635 /* 54-lock.png */,
 				A384BDB31A5FE20E001EA635 /* Info.plist */,
+				A384BDF41A5FE5F5001EA635 /* config.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -112,6 +192,53 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		A384BDD41A5FE298001EA635 /* api */ = {
+			isa = PBXGroup;
+			children = (
+				A384BDEC1A5FE449001EA635 /* APIController.swift */,
+			);
+			name = api;
+			sourceTree = "<group>";
+		};
+		A384BDDF1A5FE385001EA635 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A384BDE41A5FE385001EA635 /* Alamofire.framework */,
+				A384BDE61A5FE385001EA635 /* AlamofireTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A384BDEE1A5FE47D001EA635 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				A384BDEF1A5FE495001EA635 /* ProfileModel.swift */,
+				A377747C1A625E950083A938 /* StudentModel.swift */,
+			);
+			name = models;
+			sourceTree = "<group>";
+		};
+		A384BDF11A5FE58D001EA635 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				A37774761A60EF350083A938 /* Extensions.swift */,
+				A37774771A60EF350083A938 /* ViewControllerUtils.swift */,
+				A384BDF21A5FE5A1001EA635 /* Utils.swift */,
+			);
+			name = utils;
+			sourceTree = "<group>";
+		};
+		A384BDF61A5FE814001EA635 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A384BDF91A5FEAC9001EA635 /* LandingTvc.swift */,
+				A384BDFF1A5FF033001EA635 /* RegisterProfileVc.swift */,
+				A377747A1A625E570083A938 /* RegisterStudentVc.swift */,
+				A39ADEE11A6913E600F941A5 /* UploadImageVc.swift */,
+			);
+			name = controllers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,10 +249,12 @@
 				A384BDAB1A5FE20E001EA635 /* Sources */,
 				A384BDAC1A5FE20E001EA635 /* Frameworks */,
 				A384BDAD1A5FE20E001EA635 /* Resources */,
+				A384BDE91A5FE3A7001EA635 /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A384BDE81A5FE397001EA635 /* PBXTargetDependency */,
 			);
 			name = littlestars;
 			productName = littlestars;
@@ -179,6 +308,12 @@
 			mainGroup = A384BDA61A5FE20E001EA635;
 			productRefGroup = A384BDB01A5FE20E001EA635 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = A384BDDF1A5FE385001EA635 /* Products */;
+					ProjectRef = A384BDDE1A5FE385001EA635 /* Alamofire.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				A384BDAE1A5FE20E001EA635 /* littlestars */,
@@ -187,13 +322,37 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		A384BDE41A5FE385001EA635 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = A384BDE31A5FE385001EA635 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A384BDE61A5FE385001EA635 /* AlamofireTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = AlamofireTests.xctest;
+			remoteRef = A384BDE51A5FE385001EA635 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		A384BDAD1A5FE20E001EA635 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A384BE051A5FF09C001EA635 /* 18-envelope.png in Resources */,
+				A384BDF51A5FE5F5001EA635 /* config.plist in Resources */,
+				A37774721A60ED510083A938 /* 32-iphone@2x.png in Resources */,
+				A384BE041A5FF09C001EA635 /* 111-user.png in Resources */,
 				A384BDBA1A5FE20E001EA635 /* Main.storyboard in Resources */,
+				A37774751A60EDFA0083A938 /* 68-paperclip@2x.png in Resources */,
 				A384BDBF1A5FE20E001EA635 /* LaunchScreen.xib in Resources */,
+				A39ADEDF1A69139F00F941A5 /* image_placeholder.png in Resources */,
+				A384BE061A5FF09C001EA635 /* 54-lock.png in Resources */,
 				A384BDBC1A5FE20E001EA635 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,8 +371,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A384BDB71A5FE20E001EA635 /* ViewController.swift in Sources */,
+				A384BDF01A5FE495001EA635 /* ProfileModel.swift in Sources */,
+				A384BE001A5FF033001EA635 /* RegisterProfileVc.swift in Sources */,
+				A384BDED1A5FE449001EA635 /* APIController.swift in Sources */,
+				A39ADEE21A6913E600F941A5 /* UploadImageVc.swift in Sources */,
+				A377747D1A625E950083A938 /* StudentModel.swift in Sources */,
 				A384BDB51A5FE20E001EA635 /* AppDelegate.swift in Sources */,
+				A37774791A60EF350083A938 /* ViewControllerUtils.swift in Sources */,
+				A377747B1A625E570083A938 /* RegisterStudentVc.swift in Sources */,
+				A384BDF31A5FE5A1001EA635 /* Utils.swift in Sources */,
+				A384BDFA1A5FEAC9001EA635 /* LandingTvc.swift in Sources */,
+				A37774781A60EF350083A938 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +400,11 @@
 			isa = PBXTargetDependency;
 			target = A384BDAE1A5FE20E001EA635 /* littlestars */;
 			targetProxy = A384BDC51A5FE20E001EA635 /* PBXContainerItemProxy */;
+		};
+		A384BDE81A5FE397001EA635 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			targetProxy = A384BDE71A5FE397001EA635 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -337,6 +510,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = littlestars/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -347,6 +521,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = littlestars/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -405,6 +580,7 @@
 				A384BDD01A5FE20E001EA635 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A384BDD11A5FE20E001EA635 /* Build configuration list for PBXNativeTarget "littlestarsTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +589,7 @@
 				A384BDD31A5FE20E001EA635 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
