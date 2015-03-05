@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A30547B61A96131A000E3E3F /* 06-magnify@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A30547B51A96131A000E3E3F /* 06-magnify@2x.png */; };
+		A372BFD91A9F496E0008607C /* SessionsVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = A372BFD81A9F496E0008607C /* SessionsVc.swift */; };
+		A372BFDC1A9F4A4A0008607C /* SessionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A372BFDB1A9F4A4A0008607C /* SessionsCell.swift */; };
+		A372BFDE1A9F4AF00008607C /* SessionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A372BFDD1A9F4AF00008607C /* SessionModel.swift */; };
 		A37774721A60ED510083A938 /* 32-iphone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A37774711A60ED510083A938 /* 32-iphone@2x.png */; };
 		A37774751A60EDFA0083A938 /* 68-paperclip@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A37774741A60EDFA0083A938 /* 68-paperclip@2x.png */; };
 		A37774781A60EF350083A938 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37774761A60EF350083A938 /* Extensions.swift */; };
@@ -30,6 +34,9 @@
 		A384BE061A5FF09C001EA635 /* 54-lock.png in Resources */ = {isa = PBXBuildFile; fileRef = A384BE031A5FF09C001EA635 /* 54-lock.png */; };
 		A39ADEDF1A69139F00F941A5 /* image_placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = A39ADEDE1A69139F00F941A5 /* image_placeholder.png */; };
 		A39ADEE21A6913E600F941A5 /* UploadImageVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39ADEE11A6913E600F941A5 /* UploadImageVc.swift */; };
+		A3DBD5C01AA5D6E400CAB5A9 /* CreateSessionVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DBD5BF1AA5D6E400CAB5A9 /* CreateSessionVc.swift */; };
+		A3DBD5C21AA5E33D00CAB5A9 /* RegisterStudentSessionVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DBD5C11AA5E33D00CAB5A9 /* RegisterStudentSessionVc.swift */; };
+		A3E6BE1A1A8CFD1500C3E5B2 /* SearchProfileVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E6BE191A8CFD1500C3E5B2 /* SearchProfileVc.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +85,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A30547B51A96131A000E3E3F /* 06-magnify@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "06-magnify@2x.png"; sourceTree = "<group>"; };
+		A372BFD81A9F496E0008607C /* SessionsVc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionsVc.swift; sourceTree = "<group>"; };
+		A372BFDB1A9F4A4A0008607C /* SessionsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionsCell.swift; sourceTree = "<group>"; };
+		A372BFDD1A9F4AF00008607C /* SessionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionModel.swift; sourceTree = "<group>"; };
 		A37774711A60ED510083A938 /* 32-iphone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "32-iphone@2x.png"; sourceTree = "<group>"; };
 		A37774741A60EDFA0083A938 /* 68-paperclip@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "68-paperclip@2x.png"; sourceTree = "<group>"; };
 		A37774761A60EF350083A938 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -105,6 +116,9 @@
 		A384BE031A5FF09C001EA635 /* 54-lock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "54-lock.png"; sourceTree = "<group>"; };
 		A39ADEDE1A69139F00F941A5 /* image_placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image_placeholder.png; sourceTree = "<group>"; };
 		A39ADEE11A6913E600F941A5 /* UploadImageVc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadImageVc.swift; sourceTree = "<group>"; };
+		A3DBD5BF1AA5D6E400CAB5A9 /* CreateSessionVc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateSessionVc.swift; sourceTree = "<group>"; };
+		A3DBD5C11AA5E33D00CAB5A9 /* RegisterStudentSessionVc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterStudentSessionVc.swift; sourceTree = "<group>"; };
+		A3E6BE191A8CFD1500C3E5B2 /* SearchProfileVc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchProfileVc.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +139,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A372BFDA1A9F49900008607C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A372BFDB1A9F4A4A0008607C /* SessionsCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
 		A384BDA61A5FE20E001EA635 = {
 			isa = PBXGroup;
 			children = (
@@ -148,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				A384BDB81A5FE20E001EA635 /* Main.storyboard */,
+				A372BFDA1A9F49900008607C /* Cells */,
 				A384BDF61A5FE814001EA635 /* controllers */,
 				A384BDF11A5FE58D001EA635 /* utils */,
 				A384BDD41A5FE298001EA635 /* api */,
@@ -163,6 +186,7 @@
 		A384BDB21A5FE20E001EA635 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A30547B51A96131A000E3E3F /* 06-magnify@2x.png */,
 				A39ADEDE1A69139F00F941A5 /* image_placeholder.png */,
 				A37774711A60ED510083A938 /* 32-iphone@2x.png */,
 				A37774741A60EDFA0083A938 /* 68-paperclip@2x.png */,
@@ -214,6 +238,7 @@
 			children = (
 				A384BDEF1A5FE495001EA635 /* ProfileModel.swift */,
 				A377747C1A625E950083A938 /* StudentModel.swift */,
+				A372BFDD1A9F4AF00008607C /* SessionModel.swift */,
 			);
 			name = models;
 			sourceTree = "<group>";
@@ -234,7 +259,11 @@
 				A384BDF91A5FEAC9001EA635 /* LandingTvc.swift */,
 				A384BDFF1A5FF033001EA635 /* RegisterProfileVc.swift */,
 				A377747A1A625E570083A938 /* RegisterStudentVc.swift */,
+				A3DBD5BF1AA5D6E400CAB5A9 /* CreateSessionVc.swift */,
 				A39ADEE11A6913E600F941A5 /* UploadImageVc.swift */,
+				A3E6BE191A8CFD1500C3E5B2 /* SearchProfileVc.swift */,
+				A372BFD81A9F496E0008607C /* SessionsVc.swift */,
+				A3DBD5C11AA5E33D00CAB5A9 /* RegisterStudentSessionVc.swift */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -346,6 +375,7 @@
 			files = (
 				A384BE051A5FF09C001EA635 /* 18-envelope.png in Resources */,
 				A384BDF51A5FE5F5001EA635 /* config.plist in Resources */,
+				A30547B61A96131A000E3E3F /* 06-magnify@2x.png in Resources */,
 				A37774721A60ED510083A938 /* 32-iphone@2x.png in Resources */,
 				A384BE041A5FF09C001EA635 /* 111-user.png in Resources */,
 				A384BDBA1A5FE20E001EA635 /* Main.storyboard in Resources */,
@@ -371,7 +401,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A372BFD91A9F496E0008607C /* SessionsVc.swift in Sources */,
+				A3DBD5C01AA5D6E400CAB5A9 /* CreateSessionVc.swift in Sources */,
 				A384BDF01A5FE495001EA635 /* ProfileModel.swift in Sources */,
+				A372BFDC1A9F4A4A0008607C /* SessionsCell.swift in Sources */,
 				A384BE001A5FF033001EA635 /* RegisterProfileVc.swift in Sources */,
 				A384BDED1A5FE449001EA635 /* APIController.swift in Sources */,
 				A39ADEE21A6913E600F941A5 /* UploadImageVc.swift in Sources */,
@@ -379,9 +412,12 @@
 				A384BDB51A5FE20E001EA635 /* AppDelegate.swift in Sources */,
 				A37774791A60EF350083A938 /* ViewControllerUtils.swift in Sources */,
 				A377747B1A625E570083A938 /* RegisterStudentVc.swift in Sources */,
+				A3E6BE1A1A8CFD1500C3E5B2 /* SearchProfileVc.swift in Sources */,
 				A384BDF31A5FE5A1001EA635 /* Utils.swift in Sources */,
+				A3DBD5C21AA5E33D00CAB5A9 /* RegisterStudentSessionVc.swift in Sources */,
 				A384BDFA1A5FEAC9001EA635 /* LandingTvc.swift in Sources */,
 				A37774781A60EF350083A938 /* Extensions.swift in Sources */,
+				A372BFDE1A9F4AF00008607C /* SessionModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

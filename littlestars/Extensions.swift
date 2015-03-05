@@ -2,18 +2,15 @@ import Foundation
 import UIKit
 
 extension UIColor {
-    
-    convenience init(hex: UInt32, alpha: CGFloat) {
-        let red = CGFloat((hex & 0xFF0000) >> 16)/256.0
-        let green = CGFloat((hex & 0xFF00) >> 8)/256.0
-        let blue = CGFloat(hex & 0xFF)/256.0
+    convenience init(red: Int, green: Int, blue: Int) {
+        assert(red >= 0 && red <= 255, "Invalid red component")
+        assert(green >= 0 && green <= 255, "Invalid green component")
+        assert(blue >= 0 && blue <= 255, "Invalid blue component")
         
-        self.init(red: red, green: green, blue: blue, alpha: alpha)
+        self.init(red: CGFloat(red) / 255.0, green: CGFloat(green) / 255.0, blue: CGFloat(blue) / 255.0, alpha: 1.0)
     }
-}
-
-extension Double {
-    func toString() -> String {
-        return String(format: "%.2f",self)
+    
+    convenience init(netHex:Int) {
+        self.init(red:(netHex >> 16) & 0xff, green:(netHex >> 8) & 0xff, blue:netHex & 0xff)
     }
 }

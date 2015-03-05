@@ -13,6 +13,7 @@ class LandingTvc: UITableViewController {
 
 
     }
-
-
+    
+    
+   
 }

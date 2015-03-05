@@ -79,12 +79,23 @@ class APIController {
     
     func UploadStream(image:UIImage, profileId:String, name:String, birthday:String) {
         
+        let size = CGSizeApplyAffineTransform(image.size, CGAffineTransformMakeScale(0.5, 0.5))
+        let hasAlpha = false
+        let scale: CGFloat = 0.0
+        
+        UIGraphicsBeginImageContextWithOptions(size, !hasAlpha, scale)
+        image.drawInRect(CGRect(origin: CGPointZero, size: size))
+        
+        let scaledImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+
+        
         var manager = Manager.sharedInstance;
         manager.session.configuration.HTTPAdditionalHeaders = ["Content-Type": "application/octet-stream"]
         
         var url = Utils.getPlistValue("API") + "/UploadFile?fileName=file.jpg" + "_" + profileId + "_" + name + "_" + birthday
         
-        var imageData:NSData = UIImageJPEGRepresentation(image, 30)
+        var imageData:NSData = UIImageJPEGRepresentation(scaledImage, 0.3)
         
         Alamofire.upload(.POST, url,  imageData)
             .responseJSON { (request, response, JSON, error) in
@@ -99,6 +110,72 @@ class APIController {
                 
         }
         
+        
+    }
+    
+    func getOpenSessions() {
+        
+        var manager = Manager.sharedInstance;
+        manager.session.configuration.HTTPAdditionalHeaders = ["Content-Type": "application/json"]
+        
+        Alamofire.request(.GET, Utils.getPlistValue("API") + "/OpenSessions", parameters: nil)
+            .responseJSON { (request, response, JSON, error) in
+                if(error == nil) {
+                    
+                    let jsonResults = JSON as Dictionary<String, NSObject>
+                     self.delegate.didRecieveJson!(jsonResults)
+                }
+        }
+        
+    }
+    
+    func GetProfileOverview(profilePin:String) {
+        
+        
+        var manager = Manager.sharedInstance;
+        manager.session.configuration.HTTPAdditionalHeaders = ["Content-Type": "application/json"]
+        
+        Alamofire.request(.GET, Utils.getPlistValue("API") + "/ProfileOverview/" + profilePin, parameters: nil)
+            .responseJSON { (request, response, JSON, error) in
+               
+               
+                if(error == nil) {
+                 //   let jsonResults = JSON as Dictionary<String, NSObject>
+                      let jsonDictionary = (JSON as NSDictionary)
+                    self.delegate.didRecieveJson!(jsonDictionary)
+                } else {
+                    self.delegate.didRecieveError!(error!);
+                }        }
+        
+    }
+    
+    func CreateSession(alias:String, startDate:String, startTime:String, duration:String) {
+        
+        let parameters = [
+            
+            "session": [
+                "Alias": alias,
+                "StartDate": startDate,
+                "StartTime": startTime,
+                "Duration": duration
+                
+                
+            ]
+        ]
+        
+        Alamofire.request(.POST, Utils.getPlistValue("API") + "/CreateSession", parameters: parameters,encoding: .JSON)
+            .responseJSON
+            { (request, response, JSON, error) in
+                println(error)
+                println(response)
+                if (error == nil) {
+                    let jsonResults = JSON as Dictionary<String, NSObject>
+                    self.delegate.didRecieveJson!(jsonResults)
+                } else {
+                    self.delegate.didRecieveError!(error!);
+                }
+                
+        }
         
     }
 

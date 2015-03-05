@@ -10,7 +10,7 @@ class RegisterStudentVc: UIViewController,  UIAlertViewDelegate {
     
     override func viewDidLoad() {
         
-
+        println(profileId)
         super.viewDidLoad()
 
 

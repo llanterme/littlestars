@@ -16,11 +16,11 @@ class ProgressView {
     func showProgressView(view: UIView) {
         containerView.frame = view.frame
         containerView.center = view.center
-        containerView.backgroundColor = UIColor(hex: 0xffffff, alpha: 0.3)
+        containerView.backgroundColor = UIColor(netHex: 0xffffff)
         
         progressView.frame = CGRectMake(0, 0, 80, 80)
         progressView.center = view.center
-        progressView.backgroundColor = UIColor(hex: 0x444444, alpha: 0.7)
+        progressView.backgroundColor = UIColor(netHex: 0x444444)
         progressView.clipsToBounds = true
         progressView.layer.cornerRadius = 10
         

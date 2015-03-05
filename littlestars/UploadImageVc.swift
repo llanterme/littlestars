@@ -45,6 +45,7 @@ class UploadImageVc: UIViewController, UIImagePickerControllerDelegate, UINaviga
             
             imageUploadButton.hidden = false;
             
+                       
         }
     }
     
